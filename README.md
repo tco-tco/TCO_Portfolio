@@ -11,6 +11,6 @@
 ## 2- Analysis of US Citizens by Income Levels (EDA)
 
 ## 3- Web Scraping/Automation Projects
-### 3.1- Drinking Water Quality Assesment Project
-### 3.2- [Automation Project](https://github.com/tco-tco/AutomationProject)
+### 3.1- Drinking Water Quality Assessment Project
+### 3.2- Automation Project
 
