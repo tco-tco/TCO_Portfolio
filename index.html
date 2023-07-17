@@ -15,6 +15,13 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <title>Add Title Here</title>
+
+        <script type="text/javascript"
+            src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+        <script type="text/javascript"></script>
+        
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -423,18 +430,34 @@
                     <div class="modal-body text-center pb-5">
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-lg-8">
+                                <div class="col-lg-11">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-2">TABLEAU Visualization- “Agricultural Areas of Turkey” </h2>
+                                    <p><a class="link-opacity-75-hover" href="https://public.tableau.com/app/profile/tb.cnn.o/viz/TrkiyeTarmAlanlar/TarmAlanStory">Go to the TABLEAU page...</a></p>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
+                                    <h4 style="text-align:left; margin: 10px;">Data</h4>
+                                    <p style="text-align:left; margin: 10px;">Data downloaded from Turkish Statistical Institute website. Data cleaning and preparations were done by using <strong>Python, Pandas</strong> library. 
+                                        Then regional, city based and year based differences visualized in dashboards. Dashboard can </p>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
+                                    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+
+                                    <!-- 
+                                    Initialize the API as part of your HTML code by using the <tableau-viz> web component. 
+                                    After linking to the API library, the following code is all you need to embed a Tableau view into your HTML pages.
+                                    -->
+                                    
+                                    <tableau-viz id="tableauViz mx-auto"      
+                                    src='https://public.tableau.com/views/TrkiyeTarmAlanlar/TarmAlanStory?:language=en-US&:display_count=n&:origin=viz_share_link'      
+                                    toolbar='bottom' hide-tabs>
+                                    </tableau-viz>
+
+
+                                         <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
