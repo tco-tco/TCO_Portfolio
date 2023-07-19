@@ -415,7 +415,6 @@
                                                 <img style="max-width: 90%;" src="assets/img/portfolio/svm_roc_cleaned.png" alt="">
                                                 <img style="max-width: 90%;" src="assets/img/portfolio/svm_class_pred_cleaned.png" alt="">
                                             </div>
-
                                         
                                         </div>
                                     </div>
@@ -426,6 +425,63 @@
                                             <p>* Cleaned data (with dropped outliers) is slightly better than uncleaned data.</p>
                                             <p>* Outlier cleaning seemed to help clean the noise in the data.</p>
                                             <p>* The current results are good enough. But for better results, further cleaning can be done considering the class outliers individually.</p>
+                                    </div>
+                                    <h4>Decision Tree</h4>
+                                    <div class="container-flex">
+                                        <div class="row justify-content-center">
+                                            <div class="col-4">
+                                                <h6>DT with Original Data </h6>                                                     
+                                                <img style="max-width: 90%;" src="assets/img/portfolio/DT_conf_uncleaned.png" alt="">
+                                                <img style="max-width: 90%;" src="assets/img/portfolio/DT_roc_uncleaned.png" alt="">
+                                                <img style="max-width: 90%;" src="assets/img/portfolio/DT_class_pred_uncleaned.png" alt="">
+                                            </div>
+                                            <div class="col-4">
+                                                <h6>DT with Cleaned Data </h6>                                                     
+                                                <img style="max-width: 90%;" src="assets/img/portfolio/DT_conf_cleaned.png" alt="">
+                                                <img style="max-width: 90%;" src="assets/img/portfolio/DT_roc_cleaned.png" alt="">
+                                                <img style="max-width: 90%;" src="assets/img/portfolio/DT_class_pred_cleaned.png" alt="">
+                                            </div>
+                                            <div class="col-4">
+                                                <h6>DT with Bagging</h6>                                                     
+                                                <img style="max-width: 90%;" src="assets/img/portfolio/DT_conf_bagging.png" alt="">
+                                                <img style="max-width: 90%;" src="assets/img/portfolio/DT_roc_bagging.png" alt="">
+                                                <img style="max-width: 90%;" src="assets/img/portfolio/DT_class_pred_bagging.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="text-align: justify;">
+                                        <p class="mb-4"> <strong>Comparison between cleaned, uncleaned, bagging results</strong></p>
+                                            <p>* Decision Tree model test results were slightly increased while train results decreased with cleaned data. It seems that overfit decreased slightly, after dropping outliers.</p>
+                                            <p>* Cleaned data also used with bagging method for comparison. The results were better both for test and training scores. Overall results showed that overfitting eliminated with a better test scores with cleaned data & bagging.</p>
+                                    </div>
+
+                                    <div class="container-flex">
+                                        <div class="row justify-content-center">
+                                            <div class="col-6">
+                                                <h4>Random Forest</h4>
+                                                <img style="max-width: 90%;" src="assets/img/portfolio/RF_conf.png" alt="">
+                                                <img style="max-width: 90%;" src="assets/img/portfolio/RF_roc.png" alt="">
+                                                <img style="max-width: 90%;" src="assets/img/portfolio/RF_class_pred.png" alt="">
+                                            </div>
+                                            <div class="col-6">
+                                                <h4>XGBOOST</h4>
+                                                <img style="max-width: 90%;" src="assets/img/portfolio/XG_conf.png" alt="">
+                                                <img style="max-width: 90%;" src="assets/img/portfolio/XG_roc.png" alt="">
+                                                <img style="max-width: 90%;" src="assets/img/portfolio/XG_class_pred.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <div style="text-align: justify;">
+                                        <h4 class="mb-4"> <strong>Results</strong></h4>
+                                        <img style="max-width: 90%;" src="assets/img/portfolio/overall_accuracy.png" alt="">
+                                        <img style="max-width: 90%;" src="assets/img/portfolio/overall_f1.png" alt="">
+                                        <p> * All four models has pretty  good scores. </p>
+                                        <p> * SVM has the first place in terms of scores.</p>
+                                        <p> * However, in the real world scenario, score not the only thing to consider.</p>
+                                        <p> * If you need explanable model, DT is the only option.</p>
+                                        <p> * We have around 1.7 sec. prediction time for SVM, on the other hand, Xgboost has around 0.1 sec. prediction time.</p>
+                                        <p> * In this context, which algorithm to choose for deployment is the subject of the business problem we plan to solve.</p>
                                     </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
